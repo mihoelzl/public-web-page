@@ -5,14 +5,14 @@ widget = "publications"
 active = true
 date = 2016-04-20
 
-title = "Recent Publications"
-subtitle = ""
+title = "Publications"
+subtitle = "Conference papers"
 
 # Order that this section will appear in.
 weight = 20
 
 # Number of publications to list.
-count = 10
+count = 20
 
 # List format.
 #   0 = Simple
@@ -30,9 +30,7 @@ list_format = 3
 #  4: Technical report
 #  5: Book
 #  6: Book chapter
-publication_type = "-1"
+publication_type = "1"
 
-# Exclude publications that are shown in the Selected Publications widget?
-exclude_selected = false
 +++
 

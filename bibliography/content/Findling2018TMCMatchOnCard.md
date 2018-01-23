@@ -1,0 +1,31 @@
+---
+abstract: Biometrics have become important for mobile authentication, e.g. to unlock
+  devices before using them. One way to protect biometric information stored on mobile
+  devices from disclosure is using embedded smart cards (SCs) with biometric match-on-card
+  (MOC) approaches. However, computational restrictions of SCs also limit biometric
+  matching procedures. We present a mobile MOC approach that uses offline training
+  to obtain authentication models with a simplistic internal representation in the
+  final trained state, wherefore we adapt features and model representation to enable
+  their usage on SCs. The pre-trained model can be shipped with SCs on mobile devices
+  without requiring retraining to enroll users. We apply our approach to acceleration
+  based mobile gait authentication as well as face authentication and compare authentication
+  accuracy and computation time of 16 and 32 bit Java Card SCs. Using 16 instead of
+  32 bit SCs has little impact on authentication performance and is faster due to
+  less data transfer and computations on the SC. Results indicate 11.4 and 2.4-5.4
+  EER for gait respectively face authentication, with transmission and computation
+  durations on SCs in the range of 2s respectively 1s. To the best of our knowledge
+  this work represents the first practical approach towards acceleration based gait
+  MOC authentication.
+authors: [Rainhard Dieter Findling, "Michael H\xF6lzl", Rene Mayrhofer]
+date: '2018-01-01'
+id: Findling2018TMCMatchOnCard
+issued:
+- {year: 2018}
+note: Under review
+publication: <span class="nocase">IEEE Transactions on Mobile Computing</span>
+publication_types: [2]
+title: Mobile Match-on-Card Authentication Using Offline-Simplified Models with Gait
+  and Face Biometrics
+url_custom:
+- {name: bibtex, url: files/bibs/Findling2018TMCMatchOnCard.bib}
+---
