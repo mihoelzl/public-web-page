@@ -1,0 +1,33 @@
+---
+DOI: 10.1145/2684103.2684128
+abstract: With the increasing popularity of security and privacy sensitive systems
+  on mobile devices, such as mobile banking, mobile credit cards, mobile ticketing,
+  or mobile digital identities, challenges for the protection of personal and security
+  sensitive data of these use cases emerged. A common approach for the protection
+  of sensitive data is to use additional hardware such as smart cards or secure elements.
+  The communication between such dedicated hardware and back-end management systems
+  uses strong cryptography. However, the data transfer between applications on the
+  mobile device and so-called applets on the dedicated hardware is often either unencrypted
+  (and interceptable by malicious software) or encrypted with static keys stored in
+  applications. To address this issue we present a solution for fine-grained secure
+  application-to-applet communication based on Secure Remote Password (SRP-6a), an
+  authenticated key agreement protocol, with a user-provided password at run-time.
+  By exploiting the Java Card cryptographic API and minor adaptations to the protocol,
+  which do not affect the security, we were able to implement this scheme on Java
+  Cards with reasonable computation time.
+authors: ["Michael H\xF6lzl", Endalkachew Asnake, "Ren\xE9 Mayrhofer", Michael Roland]
+date: '2014-12-01'
+id: Hoelzl2014MoMM
+issued:
+- {month: 12, year: 2014}
+page: 147-156
+publication: <span class="nocase">Proceedings of the 12th International Conference
+  on Advances in Mobile Computing & Multimedia (MoMM2014)</span>
+publication_types: [1]
+publisher: ACM
+title: Mobile Application to Java Card Applet Communication using a Password-authenticated
+  Secure Channel
+url_custom:
+- {name: bibtex, url: files/bibs/Hoelzl2014MoMM.bib}
+- {name: DOI, url: 'https://doi.org/10.1145/2684103.2684128'}
+---

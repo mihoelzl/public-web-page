@@ -139,9 +139,6 @@ def gen_items(bib):
     for item in bib:
         custom_urls = []
 
-        if 'hide' in item.keys():
-            continue
-            
         key = clean_expr.sub('_', item['id'])
         if 'title-short' in item.keys():
             item['short_title'] = item['title-short']

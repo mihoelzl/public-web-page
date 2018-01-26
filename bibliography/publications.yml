@@ -379,7 +379,7 @@ references:
   note: Under review
   title: <span class="nocase">Mobile Match-on-Card Authentication Using Offline-Simplified
     Models with Gait and Face Biometrics</span>
-  type: article-journal
+  type: manuscript
 - abstract: There is a broad range of existing electronic identity (eID) systems which
     provide methods to sign documents or authenticate to online services (e.g. governmental
     eIDs, FIDO). However, these solutions mainly focus on the validation of an identity

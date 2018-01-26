@@ -415,7 +415,7 @@ references:
   DOI: 10.1145/3007120.3007132
 
 - id: Findling2018TMCMatchOnCard
-  type: article-journal
+  type: manuscript
   author:
   - family: Findling
     given: Rainhard Dieter

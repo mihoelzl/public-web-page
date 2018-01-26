@@ -1,7 +1,7 @@
 +++
 # Recent Publications widget.
 # This widget displays recent publications from `content/publication/`.
-widget = "publications"
+widget = "publications_yearly"
 active = true
 date = 2016-04-20
 
@@ -12,7 +12,7 @@ subtitle = "Conference papers"
 weight = 20
 
 # Number of publications to list.
-count = 20
+count = 100
 
 # List format.
 #   0 = Simple
