@@ -21,6 +21,19 @@ import pybtex.database as ptd
 PUBTYPES = dict({"paper-conference": 1, "article-journal": 2, "report" : 4, "unpublished" : 3, "manuscript": 4})
 TAG_RE = re.compile(r'<[^>]+>')
 
+MDTEMPDIRECTORY = 'mdfiles'
+MDTARGETDIRECTORY = 'publication'
+
+BIBTEMPDIRECTORY = 'bibs'
+BIBTARGETDIRECTORY = 'files/bibs/'
+
+PDFSOURCEDIRECTORY = 'pdfs'
+PDFTARGETDIRECTORY = 'files/pdfs/'
+
+PAGEROOT = '..'
+
+FILE_EXPR = re.compile('^(?P<desc>[^:]*):(?P<path>[^:]+)[\\\\/](?P<file>[^:/\\\\]+):(?P<type>[^:;]*)$')
+
 def fix_files(path):
     scratch_path = os.path.join(path, 'scratch')
     if not os.path.isdir(scratch_path):
@@ -71,11 +84,19 @@ def preprocess(infile, outfile):
 def call_citeproc(source, target):
     os.system('pandoc-citeproc -y ' + source + ' > ' + target)
 
-file_expr = re.compile('^(?P<desc>[^:]*):(?P<path>[^:]+)[\\\\/](?P<file>[^:/\\\\]+):(?P<type>[^:;]*)$')
+def create_temp_dirs():
+    if os.path.exists(MDTEMPDIRECTORY):
+        shutil.rmtree(MDTEMPDIRECTORY)
+
+    if os.path.exists(BIBTEMPDIRECTORY):
+        shutil.rmtree(BIBTEMPDIRECTORY)
+
+    os.mkdir(MDTEMPDIRECTORY)
+    os.mkdir(BIBTEMPDIRECTORY)
 
 def extract_file_link(filestr):
     files = filestr.split(';')
-    matches = [file_expr.match(s) for s in files ]
+    matches = [FILE_EXPR.match(s) for s in files ]
     # d = dict([(m.group('desc'), m.group('file')) for m in matches])
     d = [ {'desc':m.group('desc'), 'file': m.group('file')} for m in matches]
     return d
@@ -109,7 +130,7 @@ def gen_refs(bibfile):
 
         newdic = dict({yitem['id'] : bitem})
         output = ptd.BibliographyData(newdic)
-        output.to_file("bibfiles/"+ yitem['id'] + ".bib", "bibtex")
+        output.to_file( os.path.join(BIBTEMPDIRECTORY, yitem['id'] + ".bib"), "bibtex")
 
     yaml.dump(ybib, open('publications.yml', 'w', encoding="utf-8"))
     return ybib
@@ -133,9 +154,7 @@ def gen_items(bib):
                    'amazon',
                    'abstract'
                    ]
-    # title_keys = ['title', 'short_title', 'container_title', 'collection_title']
-    if not os.path.exists('content'):
-        os.mkdir('content')
+
     for item in bib:
         custom_urls = []
 
@@ -162,11 +181,15 @@ def gen_items(bib):
         if 'day' in dd.keys():
             d = int(dd['day'])
         header_items['date'] = ("%04d-%02d-%02d" % (y, m, d))
-        if 'URL' in item.keys():
-            header_items['url_pdf'] = item['URL']
+        
+        header_items['url_pdf'] = PDFTARGETDIRECTORY + key
+
         if 'preprint' in item.keys():
             header_items['url_preprint'] = item['preprint']
 
+        if 'URL' in item.keys():
+            custom_urls.append(dict({"name" : "Link", "url": item['URL']}))
+        
         # Specify the custom URLS to the entry
         custom_urls.append(dict({"name" : "bibtex", "url":"files/bibs/"+key+".bib"}))
         if 'DOI' in item.keys():
@@ -180,12 +203,12 @@ def gen_items(bib):
         # Remove HTML tags from title
         header_items['title'] = TAG_RE.sub('', header_items['title'])
 
-        outfile = open(os.path.join('content', key + '.md'), 'w', encoding="utf-8")
+        outfile = open(os.path.join(MDTEMPDIRECTORY, key + '.md'), 'w', encoding="utf-8")
         outfile.write('---\n')
         yaml.dump(header_items, outfile)
         outfile.write('---\n')
 
-def move_md_files(src = 'content', dest = '../content/publication'):
+def move_md_files(src = MDTEMPDIRECTORY, dest = os.path.join(PAGEROOT, 'content', MDTARGETDIRECTORY)):
     files = glob.glob(os.path.join(src, '*.md'))
     if not os.path.isdir(dest):
         os.makedirs(dest)
@@ -194,7 +217,7 @@ def move_md_files(src = 'content', dest = '../content/publication'):
         dest_file = os.path.join(dest, base)
         shutil.copyfile(f, dest_file)
 
-def move_bib_files(src = 'bibfiles', dest = '../static/files/bibs'):
+def move_bib_files(src = BIBTEMPDIRECTORY, dest = os.path.join(PAGEROOT, 'static', BIBTARGETDIRECTORY)):
     files = glob.glob(os.path.join(src, '*.bib'))
     if not os.path.isdir(dest):
         os.makedirs(dest)
@@ -203,7 +226,7 @@ def move_bib_files(src = 'bibfiles', dest = '../static/files/bibs'):
         dest_file = os.path.join(dest, base)
         shutil.copyfile(f, dest_file)
 
-def move_pdf_files(src = 'pdfs', dest = '../static/files/pdfs'):
+def move_pdf_files(src = PDFSOURCEDIRECTORY, dest = os.path.join(PAGEROOT, 'static', PDFTARGETDIRECTORY)):
     files = os.listdir(src)
     if not os.path.isdir(dest):
         os.makedirs(dest)
@@ -247,6 +270,9 @@ def main():
         print("Preprocessing BibTeX file")
         intermediate = os.path.splitext(source)[0] + "_an" + ".bib"
         preprocess(source, intermediate)
+
+    create_temp_dirs()
+
     bib = gen_refs(intermediate)
     gen_items(bib['references'])
     move_md_files()
