@@ -12,10 +12,10 @@ abstract: There is a broad range of existing electronic identity (eID) systems w
   validation in a similar fashion as regular ID cards and makes carrying around various
   physical cards unnecessary.
 authors: ["Michael H\xF6lzl", Michael Roland, "Ren\xE9 Mayrhofer"]
-date: '2017-01-01'
+date: '2017-09-01'
 id: Hoelzl2017IFIPShort
 issued:
-- {year: 2017}
+- {month: 9, year: 2017}
 publication: <span class="nocase">The Smart World Revolution - 12th International
   IFIP Summer School on Privacy and Identity Management (Pre-proceedings)</span>
 publication_types: [1]
@@ -23,4 +23,5 @@ title: An Extensible and Privacy-preserving Mobile eID System for Real-world Ide
   and Offline Verification
 url_custom:
 - {name: bibtex, url: files/bibs/Hoelzl2017IFIPShort.bib}
+url_pdf: files/pdfs/Hoelzl2017IFIPShort
 ---

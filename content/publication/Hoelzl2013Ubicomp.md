@@ -25,4 +25,5 @@ title: Towards an Open Ecosystem for Embedded Tamper Resistant Hardware in Mobil
   Devices
 url_custom:
 - {name: bibtex, url: files/bibs/Hoelzl2013Ubicomp.bib}
+url_pdf: files/pdfs/Hoelzl2013Ubicomp
 ---

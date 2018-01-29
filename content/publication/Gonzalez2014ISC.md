@@ -31,5 +31,6 @@ title: A Practical Hardware-Assisted Approach to Customize Trusted Boot for Mobi
 url_custom:
 - {name: bibtex, url: files/bibs/Gonzalez2014ISC.bib}
 - {name: DOI, url: 'https://doi.org/10.1007/978-3-319-13257-0_35'}
+url_pdf: files/pdfs/Gonzalez2014ISC
 volume: '8783'
 ---

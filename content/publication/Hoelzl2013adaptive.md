@@ -26,4 +26,5 @@ title: An Adaptive and Book-Oriented Mobile Touch Screen User Interface Concept 
 url_custom:
 - {name: bibtex, url: files/bibs/Hoelzl2013adaptive.bib}
 - {name: DOI, url: 'https://doi.org/10.1145/2536853.2536869'}
+url_pdf: files/pdfs/Hoelzl2013adaptive
 ---

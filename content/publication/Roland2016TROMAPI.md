@@ -18,6 +18,7 @@ publication_types: [4]
 publisher: Computing Research Repository (CoRR), arXiv:1601.03027 \[cs.CR\]
 title: 'Open Mobile API: Accessing the UICC on Android Devices'
 url_custom:
+- {name: Link, url: 'http://arxiv.org/abs/1601.03027'}
 - {name: bibtex, url: files/bibs/Roland2016TROMAPI.bib}
-url_pdf: http://arxiv.org/pdf/1601.03027
+url_pdf: files/pdfs/Roland2016TROMAPI
 ---

@@ -15,6 +15,7 @@ publication_types: [4]
 publisher: Computing Research Repository (CoRR), arXiv:1507.06427 \[cs.CR\]
 title: Evaluation of Contactless Smartcard Antennas
 url_custom:
+- {name: Link, url: 'http://arxiv.org/abs/1507.06427'}
 - {name: bibtex, url: files/bibs/Roland2015TRCardAntennas.bib}
-url_pdf: http://arxiv.org/pdf/1507.06427
+url_pdf: files/pdfs/Roland2015TRCardAntennas
 ---

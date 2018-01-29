@@ -26,5 +26,6 @@ title: 'Localization in an industrial environment: a case study on the difficult
 url_custom:
 - {name: bibtex, url: files/bibs/Hoelzl2015Localization.bib}
 - {name: DOI, url: 'https://doi.org/10.1155/2015/567976'}
+url_pdf: files/pdfs/Hoelzl2015Localization
 volume: '11'
 ---

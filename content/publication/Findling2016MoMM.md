@@ -31,4 +31,5 @@ title: Mobile Gait Match-on-Card Authentication from Acceleration Data with Offl
 url_custom:
 - {name: bibtex, url: files/bibs/Findling2016MoMM.bib}
 - {name: DOI, url: 'https://doi.org/10.1145/3007120.3007132'}
+url_pdf: files/pdfs/Findling2016MoMM
 ---
