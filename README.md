@@ -1,3 +1,3 @@
-# Public Web Page
+# Public Web Page 
 
-Files for the web page generation of Michael Hölzl 
+Source files of michaelhoelzl.eu

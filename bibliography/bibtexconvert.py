@@ -3,7 +3,7 @@
 """
 Created on Tue Jun 13 18:52:00 2017
 
-@author: Jonathan Gilligan
+@author: Jonathan Gilligan, Michael Hölzl
 """
 # import pybtex as pt
 import os
