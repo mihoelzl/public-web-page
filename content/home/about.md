@@ -12,16 +12,15 @@ weight = 5
   interests = [
     "mobile security",
     "electronic identities",
-    "smart cards",
-    "trusted execution environments",
+    "cryptographic protocols",
+    "tamper resistant hardware",
     "privacy enhancing technologies"
   ]
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "PhD in Computer Science"
+  course = "PhD student in Computer Science, since 2013"
   institution = "Johannes Kepler University Linz"
-  year = -1
 
 [[education.courses]]
   course = "MSc in Mobile Computing"
@@ -32,11 +31,16 @@ weight = 5
   course = "BSc in Mobile Computing"
   institution = "University of Applied Sciences Upper Austria"
   year = 2010
+
 +++
 
 
 # about
 
-Lena Smith professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+[//]: <> (mobile security and privacy researcher... where I also obtained my PhD in 2018)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. 
+I'm an university assistant and PhD Student at the [Institute of Networks and Security](https://ins.jku.at) at the [Johannes Kepler University Linz](https://www.jku.at). My main research interests are  electronic identities, cryptographic protocols, tamper-resistant hardware (e.g. smart cards, NFC secure elements), and privacy enhancing technologies on mobile devices.
+
+I teach undergraduate courses (Networks and Distributed Systems, Operating System) as well as graduate courses (System Administration, Secure Code).
+
+[//]: <> (I teach undergraduate courses ([Networks and Distributed Systems]https://www.kusss.jku.at/kusss/lvaregistrationlist.action?coursegroupid=12780&abhart=all&courseclassid=27750, [Operating System](https://www.kusss.jku.at/kusss/lvaregistrationlist.action?coursegroupid=12768&abhart=all&courseclassid=27748 as well as graduate courses ([System Administration](https://www.kusss.jku.at/kusss/lvaregistrationlist.action?coursegroupid=6962&abhart=all&courseclassid=36978, [Secure Code](https://www.kusss.jku.at/kusss/lvaregistrationlist.action?coursegroupid=6941&abhart=all&courseclassid=36975.)

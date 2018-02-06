@@ -24,5 +24,5 @@ publisher_place: Ispra, Italy
 title: Real-world Identification for an Extensible and Privacy-preserving Mobile eID
 url_custom:
 - {name: bibtex, url: files/bibs/Hoelzl2017IFIPFull.bib}
-url_pdf: files/pdfs/Hoelzl2017IFIPFull
+url_pdf: files/pdfs/Hoelzl2017IFIPFull.pdf
 ---

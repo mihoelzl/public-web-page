@@ -20,5 +20,4 @@ title: 'Open Mobile API: Accessing the UICC on Android Devices'
 url_custom:
 - {name: Link, url: 'http://arxiv.org/abs/1601.03027'}
 - {name: bibtex, url: files/bibs/Roland2016TROMAPI.bib}
-url_pdf: files/pdfs/Roland2016TROMAPI
 ---

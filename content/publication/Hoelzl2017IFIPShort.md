@@ -23,5 +23,4 @@ title: An Extensible and Privacy-preserving Mobile eID System for Real-world Ide
   and Offline Verification
 url_custom:
 - {name: bibtex, url: files/bibs/Hoelzl2017IFIPShort.bib}
-url_pdf: files/pdfs/Hoelzl2017IFIPShort
 ---

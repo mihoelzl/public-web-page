@@ -27,5 +27,4 @@ title: DAMN - A Debugging and Manipulation Tool for Android Applications
 url_custom:
 - {name: bibtex, url: files/bibs/Schoiber2016Momm.bib}
 - {name: DOI, url: 'https://doi.org/10.1145/3007120.3007161'}
-url_pdf: files/pdfs/Schoiber2016Momm
 ---

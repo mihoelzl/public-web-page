@@ -28,5 +28,5 @@ title: 'Bridging the Gap in Privacy-Preserving Revocation: Practical and Scalabl
 url_custom:
 - {name: bibtex, url: files/bibs/Hoelzl2018Revocation.bib}
 - {name: DOI, url: 'https://doi.org/10.1145/3167132.3167303'}
-url_pdf: files/pdfs/Hoelzl2018Revocation
+url_pdf: files/pdfs/Hoelzl2018Revocation.pdf
 ---

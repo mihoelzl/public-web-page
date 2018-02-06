@@ -21,5 +21,5 @@ title: Analysis of Compass Sensor Accuracy on Several Mobile Devices in an Indus
   Environment
 url_custom:
 - {name: bibtex, url: files/bibs/Hoelzl2013Eurocast.bib}
-url_pdf: files/pdfs/Hoelzl2013Eurocast
+url_pdf: files/pdfs/Hoelzl2013Eurocast.pdf
 ---

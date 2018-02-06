@@ -25,5 +25,5 @@ title: Requirements Analysis for an Open Ecosystem for Embedded Tamper Resistant
 url_custom:
 - {name: bibtex, url: files/bibs/Hoelzl2013MoMM.bib}
 - {name: DOI, url: 'https://doi.org/10.1145/2536853.2536947'}
-url_pdf: files/pdfs/Hoelzl2013MoMM
+url_pdf: files/pdfs/Hoelzl2013MoMM.pdf
 ---

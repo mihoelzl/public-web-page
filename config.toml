@@ -69,6 +69,9 @@ defaultContentLanguageInSubdir = false
   # Enable Keybase in Contact widget by entering your keybase.io username.
   keybase = "hoelzl"
 
+  # Enable PGP in Contact widget
+  pgp = "32AF F62F EBF3 30D4 5F40 5478 BB0C D2F4 9C27 CCCC"
+
   # Discussion link (e.g. link to a forum, mailing list, or chat).
   #   Uncomment line below to use.
   #   discussion = { name = "Discuss", url = "https://discourse.gohugo.io" }
@@ -264,14 +267,17 @@ defaultContentLanguageInSubdir = false
 
 [[menu.main]]
   name = "talks"
-  url = "#posts"
+  url = "#talks"
   weight = 3
 
-[[menu.main]]
-  name = "projects"
-  url = "#projects"
-  weight = 4
-
+#[[menu.main]]
+#  name = "cv"
+#  url = "#cv"
+#  weight = 4
+#[[menu.main]]
+#  name = "projects"
+#  url = "#projects"
+#  weight = 4
 #[[menu.main]]
 #  name = "teaching"
 #  url = "#teaching"

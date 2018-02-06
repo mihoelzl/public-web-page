@@ -24,6 +24,6 @@ title: 'Protecting Touch: Authenticated App-To-Server Channels for Mobile Device
   Using NFC Tags'
 url_custom:
 - {name: bibtex, url: files/bibs/Carvalho2017Information.bib}
-url_pdf: files/pdfs/Carvalho2017Information
+url_pdf: files/pdfs/Carvalho2017Information.pdf
 volume: '8'
 ---

@@ -182,7 +182,11 @@ def gen_items(bib):
             d = int(dd['day'])
         header_items['date'] = ("%04d-%02d-%02d" % (y, m, d))
         
-        header_items['url_pdf'] = PDFTARGETDIRECTORY + key
+        # Check if pdf is available
+        pdf_file_name = key + '.pdf'
+
+        if os.path.exists(os.path.join(PDFSOURCEDIRECTORY, pdf_file_name)):
+            header_items['url_pdf'] = os.path.join(PDFTARGETDIRECTORY, pdf_file_name)
 
         if 'preprint' in item.keys():
             header_items['url_preprint'] = item['preprint']
@@ -277,7 +281,7 @@ def main():
     gen_items(bib['references'])
     move_md_files()
     move_bib_files()
-#    move_pdf_files()
+    move_pdf_files()
 
 if __name__ == '__main__':
     main()

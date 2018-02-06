@@ -17,5 +17,4 @@ title: Evaluation of Contactless Smartcard Antennas
 url_custom:
 - {name: Link, url: 'http://arxiv.org/abs/1507.06427'}
 - {name: bibtex, url: files/bibs/Roland2015TRCardAntennas.bib}
-url_pdf: files/pdfs/Roland2015TRCardAntennas
 ---
