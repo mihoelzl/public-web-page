@@ -39,7 +39,7 @@ weight = 5
 
 [//]: <> (mobile security and privacy researcher... where I also obtained my PhD in 2018)
 
-I'm an university assistant and PhD Student at the [Institute of Networks and Security](https://ins.jku.at) at the [Johannes Kepler University Linz](https://www.jku.at). My main research interests are  electronic identities, cryptographic protocols, tamper-resistant hardware (e.g. smart cards, NFC secure elements), and privacy enhancing technologies on mobile devices.
+I'm a computer scientist and infosec researcher with a special interest in mobile security. At the moment, I am also an university assistant and PhD student at the [Institute of Networks and Security](https://ins.jku.at) at [Johannes Kepler University Linz](https://www.jku.at). My main research interests are  mobile electronic identities, cryptographic protocols, tamper-resistant hardware (e.g. smart cards, NFC secure elements), and privacy enhancing technologies on mobile devices.
 
 I teach undergraduate courses (Networks and Distributed Systems, Operating System) as well as graduate courses (System Administration, Secure Code).
 
