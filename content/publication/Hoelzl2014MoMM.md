@@ -31,4 +31,5 @@ url_custom:
 - {name: bibtex, url: files/bibs/Hoelzl2014MoMM.bib}
 - {name: DOI, url: 'https://doi.org/10.1145/2684103.2684128'}
 url_pdf: files/pdfs/Hoelzl2014MoMM.pdf
+url_source: https://github.com/mobilesec/secure-channel-srp6a-applet
 ---

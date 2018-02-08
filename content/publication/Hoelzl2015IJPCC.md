@@ -32,5 +32,6 @@ url_custom:
 - {name: bibtex, url: files/bibs/Hoelzl2015IJPCC.bib}
 - {name: DOI, url: 'https://doi.org/10.1108/IJPCC-09-2015-0032'}
 url_pdf: files/pdfs/Hoelzl2015IJPCC.pdf
+url_source: https://github.com/mobilesec/secure-channel-ec-srp-applet
 volume: '11'
 ---

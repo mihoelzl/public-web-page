@@ -214,6 +214,7 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "envelope"
     icon_pack = "fa"
+    obfuscate = true
     link = "mailto:me@michaelhoelzl.eu"
 
   [[params.social]]

@@ -12,10 +12,10 @@ abstract: There is a broad range of existing electronic identity (eID) systems w
   validation in a similar fashion as regular ID cards and makes carrying around various
   physical cards unnecessary.
 authors: ["Michael H\xF6lzl", Michael Roland, "Ren\xE9 Mayrhofer"]
-date: '2017-09-01'
+date: '2017-08-01'
 id: Hoelzl2017IFIPShort
 issued:
-- {month: 9, year: 2017}
+- {month: 8, year: 2017}
 publication: <span class="nocase">The Smart World Revolution - 12th International
   IFIP Summer School on Privacy and Identity Management (Pre-proceedings)</span>
 publication_types: [1]

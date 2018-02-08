@@ -102,7 +102,7 @@ def extract_file_link(filestr):
     return d
 
 def merge(bitem, yitem):
-    fields = ['file', 'title_md', 'booktitle_md', 'note_md', 'amazon', 'preprint']
+    fields = ['file', 'title_md', 'booktitle_md', 'note_md', 'preprint', 'source']
 
     for f in fields:
         if f in bitem.fields.keys():
@@ -151,7 +151,6 @@ def gen_items(bib):
                    'keyword',
                    'note',
                    'file',
-                   'amazon',
                    'abstract'
                    ]
 
@@ -187,6 +186,9 @@ def gen_items(bib):
 
         if os.path.exists(os.path.join(PDFSOURCEDIRECTORY, pdf_file_name)):
             header_items['url_pdf'] = os.path.join(PDFTARGETDIRECTORY, pdf_file_name)
+
+        if 'source' in item.keys():
+            header_items['url_source'] = item['source']
 
         if 'preprint' in item.keys():
             header_items['url_preprint'] = item['preprint']
